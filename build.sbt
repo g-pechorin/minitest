@@ -38,7 +38,7 @@ resolvers += "jitpack" at "https://jitpack.io"
 
 name := "minitest"
 
-libraryDependencies += "com.github.g-pechorin" % "peterlavalle.sbt" % "hg.6ef2712d"
+libraryDependencies += "com.github.g-pechorin" % "minibase" % "b475bf8"
 
 libraryDependencies ++=
 	Seq(
