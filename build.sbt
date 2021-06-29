@@ -38,8 +38,6 @@ resolvers += "jitpack" at "https://jitpack.io"
 
 name := "minitest"
 
-libraryDependencies += "com.github.g-pechorin" % "minibase" % "abe6c0b"
-
 libraryDependencies ++=
 	Seq(
 		"org.scalatest" %% "scalatest" % conf("scala.test"),
