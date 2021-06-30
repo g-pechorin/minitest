@@ -38,6 +38,9 @@ resolvers += "jitpack" at "https://jitpack.io"
 
 name := "minitest"
 
+// needed for the template-resource
+libraryDependencies += "com.github.g-pechorin" % "minibase" % "0555e5b"
+
 libraryDependencies ++=
 	Seq(
 		"org.scalatest" %% "scalatest" % conf("scala.test"),
