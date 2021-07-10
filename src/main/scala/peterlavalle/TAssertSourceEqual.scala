@@ -61,13 +61,13 @@ trait TAssertSourceEqual {
 			(_: String).trim
 		)
 
+	def resourceString(name: String): String =
+		resourceStream(name).foldLeft("")(_ + _ + "\n")
+
 	def resourceStream(name: String): Stream[String] = {
 		bind(name) {
 			name =>
 				fail(s"there should be no templates, but, asked for $name")
 		}
 	}
-
-	def resourceString(name: String): String =
-		resourceStream(name).foldLeft("")(_ + _ + "\n")
 }
