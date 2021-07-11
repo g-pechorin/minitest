@@ -39,7 +39,7 @@ resolvers += "jitpack" at "https://jitpack.io"
 name := "minitest"
 
 // needed for the template-resource
-libraryDependencies += "com.github.g-pechorin" % "minibase" % "5b57dae"
+libraryDependencies += "com.github.g-pechorin" % "minibase" % "a325768"
 
 libraryDependencies ++=
 	Seq(
